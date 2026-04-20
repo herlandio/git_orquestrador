@@ -1,0 +1,12 @@
+# Padrões de identificação de HU/TASK no remap_patch_subjects.py
+# Regras:
+# - cada regex deve conter o ID no primeiro grupo de captura (...)
+# - números com espaços são normalizados (ex.: "33 088" -> "33088")
+# - min_id_digits define o tamanho mínimo do ID válido
+
+min_id_digits: 4
+
+id_patterns:
+  - '[Hh][Uu][\s_\-#]*([0-9][0-9\s]{0,20})'
+  - '(?:TASK|TASKS?)[\s_\-#]*([0-9][0-9\s]{0,20})'
+  - '#[ \t]*([0-9][0-9 \t]{0,20})'

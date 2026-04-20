@@ -1,0 +1,3 @@
+# >>> EXEMPLO DE MAP DE RENOMEAÇÃO DE ARQUIVOS <<<
+rename_map:
+  path/to/caminho/arquivo/arquivo.php: path/to/caminho/arquivo/novo_arquivo.php
